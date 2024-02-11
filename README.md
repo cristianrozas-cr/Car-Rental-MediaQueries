@@ -1,10 +1,8 @@
 
 ## Deployment
 
-To deploy this project run
+https://cristianrozas-cr.github.io/Car-Rental-MediaQueries/
 
-```bash
-  npm run deploy
-```
+
 
 
