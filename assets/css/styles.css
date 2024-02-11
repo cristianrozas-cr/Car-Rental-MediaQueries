@@ -24,6 +24,7 @@ body{
     "header"
     "filtro"
     "main"
+    "pages"
     "footer";
 }
 
@@ -70,13 +71,16 @@ body{
         display: flex;
         flex-direction: column;
     }
+    .menu-desktop a:hover{
+        color: var(--secundario)
+    }
     .menu-desktop a{
         text-decoration: none;
         color: black;
         margin: 1rem;
     }
     .container-header img{
-        width: 150px;
+        width: 250px;
 
     }
 }
@@ -169,23 +173,25 @@ body{
 /* Page number */
 
 .page-number{
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: pages;
+    margin: 20px;
+}
+
+.page-number button{
+    border: 1px solid rgba(128, 128, 128, 0.302);
+    border-radius: 7px;
+    padding: .5rem;
+    width: 80%;
 }
 
 @media (min-width: 576px) {
-    .page-number{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .page-number button{
-        border: 1px solid rgba(128, 128, 128, 0.302);
-        border-radius: 1px;
-        padding: .5rem;
-    }
+     .page-number button{
+        width: auto;
 }
-
+}
 /* Footer */
 .container-footer{
     display: flex;
